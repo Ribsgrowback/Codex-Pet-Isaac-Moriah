@@ -13,6 +13,22 @@ This pet was made using sprites taken from *The Binding of Isaac: Rebirth* as so
 
 Some animation frames were also created by splitting well-known Isaac GIF files into individual frames and adapting them for the Codex pet spritesheet.
 
+## Current Animation Setup
+
+The current spritesheet uses the following motion rows:
+
+- `idle` - still Isaac front-facing idle frame.
+- `running-right` - right-facing walk cycle assembled from Isaac body/head sprites.
+- `running-left` - left-facing walk cycle assembled from Isaac body/head sprites.
+- `waving` - blink-style fail animation using hurt frames and blank frames.
+- `jumping` - five-frame jump with squash motion.
+- `failed` - eight-frame hurt/fail sequence.
+- `waiting` - six selected frames from the Isaac drip GIF sequence.
+- `running` - six selected frames from the Isaac drip GIF sequence.
+- `review` - six selected frames from the Isaac chingon GIF sequence.
+
+The GIF-derived rows are inserted into `192x208` Codex cells while preserving their original pixel proportions.
+
 ## Installation
 
 Copy this folder into your Codex pets directory:
